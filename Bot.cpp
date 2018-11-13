@@ -64,7 +64,6 @@ bool Bot::target(Player &enemy) {
         bool test = shoot(x, y, enemy);
         if(test) {
             unsigned char check = enemyBoard.getAt(x, y);
-            std::cout << "check: " << check << std::endl;
             if(check != 'X') {
                 i = 0;
                 j = 0;
